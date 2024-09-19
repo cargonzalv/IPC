@@ -1,0 +1,40 @@
+@import 'src/app/styles/mixins';
+@import 'src/app/styles/variables';
+
+.MonthsWithoutInterestInformation {
+  align-items: baseline;
+  display: flex;
+  margin: 0;
+
+  .icon-question {
+    cursor: pointer;
+    font-size: 13px;
+    margin-left: 9px;
+  }
+
+  &__Content {
+    max-width: 313px;
+    padding: 12px 16px;
+
+    p {
+      font-size: 13px;
+      font-weight: 200;
+      line-height: 1.25;
+    }
+  }
+
+  .Tooltip {
+    background-color: $color-gray-medium-003;
+
+    &.tippy-box {
+      .tippy-content {
+        padding: 0;
+      }
+
+      .tippy-arrow:before {
+        border-top-color: $color-gray-medium-003;
+        color: $color-gray-medium-003;
+      }
+    }
+  }
+}

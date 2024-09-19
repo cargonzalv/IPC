@@ -1,0 +1,18 @@
+.fields-expiration-date-and-cvv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .field-evaluated{
+        width: 49%;
+    }
+
+    .input-group {
+        flex: 1;
+
+        &:not(:last-of-type) {
+        margin-right: 20px;
+        }
+    }
+}
+  

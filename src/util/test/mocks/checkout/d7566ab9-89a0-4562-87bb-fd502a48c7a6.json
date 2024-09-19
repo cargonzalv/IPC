@@ -1,0 +1,313 @@
+{
+  "id": "d7566ab9-89a0-4562-87bb-fd502a48c7a6",
+  "entityId": "e20e3872-75af-48d7-b325-6fb0ec020be3",
+  "companyId": "63dad459920de10001d177b3",
+  "name": "Videojuegos",
+  "amount": 200000,
+  "quantity": 1,
+  "liveMode": true,
+  "status": "Issued",
+  "type": "PaymentLink",
+  "recurrent": true,
+  "expiredAt": 1716484620,
+  "startsAt": 1713892620,
+  "allowedPaymentMethods": ["Cash"],
+  "slug": "d7566ab989a0456287bbfd502a48c7a3",
+  "url": "https://pay.stg.conekta.io/link/d7566ab989a0456287bbfd502a48c7a3",
+  "returnsControlOn": "ProcessOrder",
+  "needsShippingContact": false,
+  "orderTemplate": {
+    "lineItems": [
+      {
+        "name": "Videojuegos",
+        "unitPrice": 200000,
+        "quantity": 1,
+        "description": "",
+        "object": "",
+        "id": "",
+        "parentId": ""
+      }
+    ],
+    "customerInfo": null,
+    "currency": "MXN",
+    "metadata": null,
+    "shippingLines": [],
+    "taxLines": [],
+    "discountLines": [],
+    "shippingContact": null
+  },
+  "orders": [
+    {
+      "id": "",
+      "shippingContactId": "",
+      "apiChargeId": "",
+      "apiOrderId": "ord_2vp5BaxGmNAGwDZQp",
+      "paymentMethod": "",
+      "reference": "",
+      "shippingContact": null,
+      "charges": [
+        {
+          "id": "e001811d-73af-47ba-8c30-695462a717ed",
+          "apiChargeId": "66282147c69a0400017ef449",
+          "paymentMethod": "Card",
+          "reference": "",
+          "apiStatus": "",
+          "fillPaymentFormTime": 21
+        }
+      ],
+      "customerInfo": {
+        "customerId": "cus_2vp2L9jYWH2xKDStF",
+        "name": "pedro ruiz",
+        "email": "alexisruiz.selgom@gmail.com",
+        "phone": "",
+        "corporate": false,
+        "customerFingerprint": null
+      }
+    },
+    {
+      "id": "",
+      "shippingContactId": "",
+      "apiChargeId": "",
+      "apiOrderId": "ord_2vp2NbUrUZ7WP4rxR",
+      "paymentMethod": "",
+      "reference": "",
+      "shippingContact": null,
+      "charges": [
+        {
+          "id": "de0b8bf3-d80a-400c-a0b2-a0b4e82fe489",
+          "apiChargeId": "6627ef42c69a0400017ec7ee",
+          "paymentMethod": "Card",
+          "reference": "",
+          "apiStatus": "",
+          "fillPaymentFormTime": 21
+        }
+      ],
+      "customerInfo": {
+        "customerId": "cus_2vp2L9jYWH2xKDStF",
+        "name": "pedro ruiz",
+        "email": "alexisruiz.selgom@gmail.com",
+        "phone": "",
+        "corporate": false,
+        "customerFingerprint": null
+      }
+    },
+    {
+      "id": "",
+      "shippingContactId": "",
+      "apiChargeId": "",
+      "apiOrderId": "ord_2vp2H7Hj4dVurfqcg",
+      "paymentMethod": "",
+      "reference": "",
+      "shippingContact": null,
+      "charges": [
+        {
+          "id": "9ab97763-2ee6-4c10-8192-68d8321eef10",
+          "apiChargeId": "6627ed93c69a0400017ec55a",
+          "paymentMethod": "Card",
+          "reference": "",
+          "apiStatus": "",
+          "fillPaymentFormTime": 75
+        }
+      ],
+      "customerInfo": {
+        "customerId": "cus_2uoEFeZQ8AkwTFYyi",
+        "name": "Pedro Ruiz Customer",
+        "email": "alexis.ruiz@conekta.com",
+        "phone": "+5215555555555",
+        "corporate": false,
+        "customerFingerprint": null
+      }
+    },
+    {
+      "id": "",
+      "shippingContactId": "",
+      "apiChargeId": "",
+      "apiOrderId": "ord_2vp4dSqV3ypGwJvNx",
+      "paymentMethod": "",
+      "reference": "",
+      "shippingContact": null,
+      "charges": [
+        {
+          "id": "565d4127-4908-4bce-bdeb-8963079aba8b",
+          "apiChargeId": "6628176ac69a0400017ef39a",
+          "paymentMethod": "Card",
+          "reference": "",
+          "apiStatus": "",
+          "fillPaymentFormTime": 17
+        }
+      ],
+      "customerInfo": {
+        "customerId": "cus_2uoEFeZQ8AkwTFYyi",
+        "name": "Pedro Ruiz Customer",
+        "email": "alexis.ruiz@conekta.com",
+        "phone": "+5215555555555",
+        "corporate": false,
+        "customerFingerprint": null
+      }
+    },
+    {
+      "id": "",
+      "shippingContactId": "",
+      "apiChargeId": "",
+      "apiOrderId": "ord_2vp2Yb22D3zkH4oc3",
+      "paymentMethod": "",
+      "reference": "",
+      "shippingContact": null,
+      "charges": [
+        {
+          "id": "e6280f57-bc31-4514-a1e8-6708aa9047a6",
+          "apiChargeId": "6627f254c69a0400017ec904",
+          "paymentMethod": "Card",
+          "reference": "",
+          "apiStatus": "",
+          "fillPaymentFormTime": 30
+        }
+      ],
+      "customerInfo": {
+        "customerId": "cus_2vp2L9jYWH2xKDStF",
+        "name": "pedro ruiz",
+        "email": "alexisruiz.selgom@gmail.com",
+        "phone": "",
+        "corporate": false,
+        "customerFingerprint": null
+      }
+    },
+    {
+      "id": "",
+      "shippingContactId": "",
+      "apiChargeId": "",
+      "apiOrderId": "ord_2vp2Gj99SecT6ZvuY",
+      "paymentMethod": "",
+      "reference": "",
+      "shippingContact": null,
+      "charges": [
+        {
+          "id": "d6524eb6-5f54-4edf-81e6-39089c34cd0d",
+          "apiChargeId": "6627ed75c69a0400017ec530",
+          "paymentMethod": "Card",
+          "reference": "",
+          "apiStatus": "",
+          "fillPaymentFormTime": 45
+        }
+      ],
+      "customerInfo": {
+        "customerId": "cus_2uoEFeZQ8AkwTFYyi",
+        "name": "Pedro Ruiz Customer",
+        "email": "alexis.ruiz@conekta.com",
+        "phone": "+5215555555555",
+        "corporate": false,
+        "customerFingerprint": null
+      }
+    },
+    {
+      "id": "",
+      "shippingContactId": "",
+      "apiChargeId": "",
+      "apiOrderId": "ord_2vp2LAUN2UbbwV7Nm",
+      "paymentMethod": "",
+      "reference": "",
+      "shippingContact": null,
+      "charges": [
+        {
+          "id": "cbbac207-57a8-4249-84c5-b9cfd4a59c77",
+          "apiChargeId": "6627ee83c69a0400017ec7ca",
+          "paymentMethod": "Card",
+          "reference": "",
+          "apiStatus": "",
+          "fillPaymentFormTime": 23
+        }
+      ],
+      "customerInfo": {
+        "customerId": "cus_2vp2L9jYWH2xKDStF",
+        "name": "pedro ruiz",
+        "email": "alexisruiz.selgom@gmail.com",
+        "phone": "",
+        "corporate": false,
+        "customerFingerprint": null
+      }
+    },
+    {
+      "id": "",
+      "shippingContactId": "",
+      "apiChargeId": "",
+      "apiOrderId": "ord_2vp5A3d8mF3nGYG88",
+      "paymentMethod": "",
+      "reference": "",
+      "shippingContact": null,
+      "charges": [
+        {
+          "id": "dde34dd5-5143-4843-a44d-429363171b2f",
+          "apiChargeId": "662820cec69a0400017ef425",
+          "paymentMethod": "Card",
+          "reference": "",
+          "apiStatus": "",
+          "fillPaymentFormTime": 34
+        }
+      ],
+      "customerInfo": {
+        "customerId": "cus_2vp5A2tKF3V8eGbdc",
+        "name": "pedro ruiz",
+        "email": "alexisruiz.slegom@gmail.com",
+        "phone": "",
+        "corporate": false,
+        "customerFingerprint": null
+      }
+    },
+    {
+      "id": "",
+      "shippingContactId": "",
+      "apiChargeId": "",
+      "apiOrderId": "ord_2vp4bRTDGHK8WNQUW",
+      "paymentMethod": "",
+      "reference": "",
+      "shippingContact": null,
+      "charges": [
+        {
+          "id": "3c4d15c4-0555-4d8d-8fa8-d24260503c4a",
+          "apiChargeId": "662816cbc69a0400017ef374",
+          "paymentMethod": "Card",
+          "reference": "",
+          "apiStatus": "",
+          "fillPaymentFormTime": 22
+        }
+      ],
+      "customerInfo": {
+        "customerId": "cus_2uoEFeZQ8AkwTFYyi",
+        "name": "Pedro Ruiz Customer",
+        "email": "alexis.ruiz@conekta.com",
+        "phone": "+5215555555555",
+        "corporate": false,
+        "customerFingerprint": null
+      }
+    }
+  ],
+  "token": null,
+  "paymentSource": null,
+  "monthlyInstallmentsEnabled": true,
+  "monthlyInstallmentsOptions": [3, 6, 9, 12],
+  "paymentsLimitCount": 0,
+  "paymentKeys": [],
+  "onDemandEnabled": false,
+  "force3dsFlow": false,
+  "planId": "",
+  "excludeCardNetworks": [],
+  "redirectionTime": 0,
+  "canNotExpire": true,
+  "providers": [
+    {
+      "id": "629e08359e9c3172635b8f07",
+      "name": "pespay",
+      "paymentMethod": "cash"
+    }
+  ],
+  "openAmount": false,
+  "plan": null,
+  "configuration": {
+    "id": "00000000-0000-0000-0000-000000000000",
+    "entityId": "e20e3872-75af-48d7-b325-6fb0ec020be3",
+    "liveMode": true,
+    "customStyle": "",
+    "createCustomers": false
+  },
+  "femsaMigrated": false
+}

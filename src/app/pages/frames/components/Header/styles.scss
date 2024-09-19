@@ -1,0 +1,91 @@
+@import 'src/app/styles/mixins';
+@import 'src/app/styles/variables';
+
+.checkout-header {
+  border-bottom: solid rgba($color-black, $alpha-0-15) 1px;
+  display: block;
+  margin-bottom: 12px;
+  padding: 42px 35px;
+  height: 234px;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+  &__options {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 40px;
+
+    &.onlyLogo {
+      justify-content: flex-end;
+    }
+
+    &__back {
+      width: 50%;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &-icon {
+        margin-right: 12px;
+      }
+
+      &-text {
+        font-size: 14px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.43;
+      }
+    }
+
+  }
+
+  &__logo {
+    height: 1.2rem;
+
+    @media only screen and (max-width: 340px) {
+      height: 1rem;
+    }
+  }
+
+  &__text {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  &__total {
+    font-size: 16px;
+    line-height: 1.33;
+    margin-top: 10px;
+
+    @include respond-to('xs') {
+      font-size: 24px;
+    }
+
+    @include respond-to('sm') {
+      margin-left: 10px;
+      margin-top: 0;
+    }
+
+    span {
+      color: $color-black-004;
+      font-size: 16px;
+      line-height: 2;
+      margin-left: 7px;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .checkout-header {
+    height: 245px;
+  }
+}

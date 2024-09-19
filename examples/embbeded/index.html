@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Embbeded Checkout</title>
+    <script crossorigin src="https://localhost:9092/v1.0/js/conekta-checkout.min.js" type="module"></script>
+    <script crossorigin src="./init-iframe.js" defer></script>
+  </head>
+  <body>
+    <div id="example" style="height: 500px"></div>
+    <!-- <button type="button" onclick="submitFormFunction()">Submit</button> -->
+    <!-- Only for static import test(iframe backwardcompatibility)  -->
+    <!-- <script crossorigin src="../../dist/4.1.5/component-static.min.js"></script>
+    <script>
+      const config = {
+        locale: 'es',
+        //checkoutRequestId: 'd2fcec39-8ae9-44fe-8b05-73eb489cc290', // link de femsa
+        checkoutRequestId: '689c203414f2474594d1e0853d8160a8', // link de conekta
+        publicKey: 'key_YXQIoiPhGK7DBo45dsEEEGa',
+        targetIFrame: 'example',
+      };
+      window.ConektaCheckoutComponents.Integration({ config });
+    </script>
+     -->
+  </body>
+</html>

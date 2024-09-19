@@ -1,0 +1,10 @@
+{
+  "id": "e20e3872-75af-48d7-b325-6fb0ec020be3",
+  "name": "payments-3ds",
+  "status": "active",
+  "idReferenceCompany": "63dad459920de10001d177b3",
+  "allowedPaymentMethods": ["Card", "Cash", "BankTransfer"],
+  "createdAt": "2023-02-01T21:06:32.401972",
+  "threeDs": "Enabled",
+  "conektaLogo": true
+}

@@ -1,0 +1,26 @@
+@import 'src/app/styles/variables';
+@import 'src/app/styles/mixins';
+
+.LabelAndText {
+
+  &__label {
+    color: $color-gray-009;
+    font-size: 12px;
+
+    @include respond-to('sm') {
+      font-size: 16px;
+    }
+  }
+
+  &__text {
+    font-size: 10px;
+    font-weight: bold;
+    margin-block: 10px 20px;
+    word-wrap: break-word;
+
+    @include respond-to('sm') {
+      font-size: 14px;
+      margin-block: 10px 25px;
+    }
+  }
+}

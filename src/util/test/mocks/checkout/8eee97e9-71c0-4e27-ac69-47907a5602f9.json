@@ -1,0 +1,226 @@
+{
+  "id": "8eee97e9-71c0-4e27-ac69-47907a5602f9",
+  "entityId": "e20e3872-75af-48d7-b325-6fb0ec020be3",
+  "companyId": "63dad459920de10001d177b3",
+  "name": "Test Peter",
+  "amount": 300000,
+  "quantity": 1,
+  "liveMode": true,
+  "status": "Issued",
+  "type": "PaymentLink",
+  "recurrent": true,
+  "expiredAt": 1716998880,
+  "startsAt": 1714406880,
+  "allowedPaymentMethods": ["Card", "Cash", "BankTransfer"],
+  "slug": "8eee97e971c04e27ac6947907a5602f9",
+  "url": "https://pay.stg.conekta.io/link/8eee97e971c04e27ac6947907a5602f9",
+  "returnsControlOn": "ProcessOrder",
+  "needsShippingContact": false,
+  "orderTemplate": {
+    "lineItems": [
+      {
+        "name": "Test Peter",
+        "unitPrice": 300000,
+        "quantity": 1,
+        "description": "",
+        "object": "",
+        "id": "",
+        "parentId": ""
+      }
+    ],
+    "customerInfo": null,
+    "currency": "MXN",
+    "metadata": null,
+    "shippingLines": [],
+    "taxLines": [],
+    "discountLines": [],
+    "shippingContact": null
+  },
+  "orders": [
+    {
+      "id": "",
+      "shippingContactId": "",
+      "apiChargeId": "",
+      "apiOrderId": "ord_2vrKxgzHQYHDXdAH4",
+      "paymentMethod": "",
+      "reference": "",
+      "shippingContact": null,
+      "charges": [
+        {
+          "id": "cd12f858-bf97-4d4d-bc09-104329c5e288",
+          "apiChargeId": "66313909c126a500011d9f6b",
+          "paymentMethod": "BankTransfer",
+          "reference": "646180111802042358",
+          "apiStatus": "",
+          "fillPaymentFormTime": 1831
+        }
+      ],
+      "customerInfo": {
+        "customerId": "cus_2uoEFeZQ8AkwTFYyi",
+        "name": "Pedro Ruiz Customer",
+        "email": "alexis.ruiz@conekta.com",
+        "phone": "+5215555555555",
+        "corporate": false,
+        "customerFingerprint": null
+      }
+    },
+    {
+      "id": "",
+      "shippingContactId": "",
+      "apiChargeId": "",
+      "apiOrderId": "ord_2vrKz8QsF4tXC99eF",
+      "paymentMethod": "",
+      "reference": "",
+      "shippingContact": null,
+      "charges": [
+        {
+          "id": "accee51e-1a43-4d14-ac2f-1dd13feeb4a0",
+          "apiChargeId": "6631397ac126a500011d9f84",
+          "paymentMethod": "BankTransfer",
+          "reference": "646180111802042361",
+          "apiStatus": "",
+          "fillPaymentFormTime": 102
+        }
+      ],
+      "customerInfo": {
+        "customerId": "cus_2uoEFeZQ8AkwTFYyi",
+        "name": "Pedro Ruiz Customer",
+        "email": "alexis.ruiz@conekta.com",
+        "phone": "+5215555555555",
+        "corporate": false,
+        "customerFingerprint": null
+      }
+    },
+    {
+      "id": "",
+      "shippingContactId": "",
+      "apiChargeId": "",
+      "apiOrderId": "ord_2vqyCBiKaPKNQ3jfu",
+      "paymentMethod": "",
+      "reference": "",
+      "shippingContact": null,
+      "charges": [
+        {
+          "id": "3916e2ba-355e-4e14-9e5b-692fe1200441",
+          "apiChargeId": "662fc764a73920000182c81c",
+          "paymentMethod": "Cash",
+          "reference": "93000000086924",
+          "apiStatus": "",
+          "fillPaymentFormTime": 3
+        }
+      ],
+      "customerInfo": {
+        "customerId": "cus_2uoEFeZQ8AkwTFYyi",
+        "name": "Pedro Ruiz Customer",
+        "email": "alexis.ruiz@conekta.com",
+        "phone": "+5215555555555",
+        "corporate": false,
+        "customerFingerprint": null
+      }
+    },
+    {
+      "id": "",
+      "shippingContactId": "",
+      "apiChargeId": "",
+      "apiOrderId": "ord_2vrKZKY1SWnBPnkpC",
+      "paymentMethod": "",
+      "reference": "",
+      "shippingContact": null,
+      "charges": [
+        {
+          "id": "3d9d0016-1bc7-4d5f-ae98-54a1cee0b098",
+          "apiChargeId": "663131ddc126a500011d9f29",
+          "paymentMethod": "Cash",
+          "reference": "93000000088102",
+          "apiStatus": "",
+          "fillPaymentFormTime": 5
+        }
+      ],
+      "customerInfo": {
+        "customerId": "cus_2uoEFeZQ8AkwTFYyi",
+        "name": "Pedro Ruiz Customer",
+        "email": "alexis.ruiz@conekta.com",
+        "phone": "+5215555555555",
+        "corporate": false,
+        "customerFingerprint": null
+      }
+    },
+    {
+      "id": "",
+      "shippingContactId": "",
+      "apiChargeId": "",
+      "apiOrderId": "ord_2vrKXdM3BzuuDsVem",
+      "paymentMethod": "",
+      "reference": "",
+      "shippingContact": null,
+      "charges": [
+        {
+          "id": "61e654a5-607d-484f-b955-137698e8a4d1",
+          "apiChargeId": "66313158c126a500011d9f12",
+          "paymentMethod": "BankTransfer",
+          "reference": "646180111802042345",
+          "apiStatus": "",
+          "fillPaymentFormTime": 91
+        }
+      ],
+      "customerInfo": {
+        "customerId": "cus_2uoEFeZQ8AkwTFYyi",
+        "name": "Pedro Ruiz Customer",
+        "email": "alexis.ruiz@conekta.com",
+        "phone": "+5215555555555",
+        "corporate": false,
+        "customerFingerprint": null
+      }
+    },
+    {
+      "id": "",
+      "shippingContactId": "",
+      "apiChargeId": "",
+      "apiOrderId": "ord_2vrKQt4oELa5njmzz",
+      "paymentMethod": "",
+      "reference": "",
+      "shippingContact": null,
+      "charges": [
+        {
+          "id": "125779b6-c76a-4ff6-9e5c-943e964240f1",
+          "apiChargeId": "66312f46c126a500011d9ef7",
+          "paymentMethod": "Cash",
+          "reference": "93000000088094",
+          "apiStatus": "",
+          "fillPaymentFormTime": 22
+        }
+      ],
+      "customerInfo": {
+        "customerId": "cus_2uoEFeZQ8AkwTFYyi",
+        "name": "Pedro Ruiz Customer",
+        "email": "alexis.ruiz@conekta.com",
+        "phone": "+5215555555555",
+        "corporate": false,
+        "customerFingerprint": null
+      }
+    }
+  ],
+  "token": null,
+  "paymentSource": null,
+  "monthlyInstallmentsEnabled": false,
+  "monthlyInstallmentsOptions": [],
+  "paymentsLimitCount": 0,
+  "paymentKeys": [],
+  "onDemandEnabled": false,
+  "force3dsFlow": false,
+  "planId": "",
+  "excludeCardNetworks": [],
+  "redirectionTime": 0,
+  "canNotExpire": true,
+  "providers": [],
+  "openAmount": false,
+  "plan": null,
+  "configuration": {
+    "id": "00000000-0000-0000-0000-000000000000",
+    "entityId": "e20e3872-75af-48d7-b325-6fb0ec020be3",
+    "liveMode": true,
+    "customStyle": "",
+    "createCustomers": false
+  },
+  "femsaMigrated": true
+}

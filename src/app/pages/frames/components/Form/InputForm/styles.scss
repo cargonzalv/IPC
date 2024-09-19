@@ -1,0 +1,72 @@
+.icon-input {
+  width: 100%;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: 98% 40%;
+  vertical-align: middle;
+  background-origin: content-box;
+
+  & .frontino-form-control__control {
+    background-image: none !important;
+  }
+}
+
+.number-input {
+  &.error{
+   input::placeholder {
+      color: #d72525;
+    }
+  }
+}
+
+@mixin line-border {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-radius: 0;
+}
+
+.line {
+  .frontino-form-control--textbox .frontino-form-control__container fieldset {
+    @include line-border;
+  }
+  .frontino-form-control--textbox .frontino-form-control__field {
+    @include line-border;
+  }
+
+  .frontino-form-control--textbox.frontino-form-control--error .frontino-form-control__field:hover:not(:focus) {
+    @include line-border;
+  }
+
+  .frontino-form-control--textbox.frontino-form-control--error .frontino-form-control__field:focus {
+    @include line-border;
+  }
+
+  .frontino-form-control--textbox.frontino-form-control--error .frontino-form-control__container:focus-within fieldset {
+    @include line-border;
+  }
+
+}
+
+.rounded {
+  .frontino-form-control--textbox .frontino-form-control__container fieldset {
+    border-radius: 20px;
+  }
+
+  .frontino-form-control--textbox .frontino-form-control__field {
+    border: none
+  }
+
+  .frontino-form-control--textbox.frontino-form-control--error .frontino-form-control__field:hover:not(:focus) {
+    border: none
+  }
+
+  .frontino-form-control--textbox.frontino-form-control--error .frontino-form-control__field:focus {
+    border-radius: 20px;
+  }
+
+  .frontino-form-control--textbox.frontino-form-control--error .frontino-form-control__container:focus-within fieldset {
+    border-radius: 20px;
+  }
+
+}

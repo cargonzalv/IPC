@@ -1,0 +1,228 @@
+/// URL's
+$s3-url: 'https://assets.conekta.com/cpanel/statics/assets';
+$icon-font-url: $s3-url + '/fonts/icons';
+
+/// LAYOUT
+/// Navigation
+/// Header
+$navigation-header-height: 100px;
+$navigation-header-padding-expanded: 0 40px;
+$navigation-width-expanded: 280px;
+$navigation-breakpoint-small: 813px;
+$main-content-views-padding: 20px;
+$main-content-views-padding-expanded: 43px;
+
+// Tooltip
+$tooltip-arrow-distance-from-content: -8px;
+
+/// FONT STACK
+$font-regular: 'Inter';
+/// Icons
+$font-conekta: 'conekta-icons' !important;
+
+/// BREAK POINTS
+/// Breakpoints map
+$breakpoints: ('mxs': (min-width: 320px,
+  ),
+  'xs': (min-width: 375px,
+  ),
+  'sm': (min-width: 415px,
+  ),
+  'mdm': (min-width: 768px,
+  ),
+  'md': (min-width: 992px,
+  ),
+  'lg': (min-width: 1200px,
+  ),
+) !default;
+
+/// ALPHA
+$alpha-0-1: 0.1;
+$alpha-0-2: 0.2;
+$alpha-0-3: 0.3;
+$alpha-0-4: 0.4;
+$alpha-0-5: 0.5;
+$alpha-0-7: 0.7;
+$alpha-0-8: 0.8;
+$alpha-05: 0.05;
+$alpha-08: 0.08;
+$alpha-09: 0.09;
+$alpha-0-15: 0.15;
+$alpha-0-16: 0.16;
+$alpha-0-75: 0.75;
+
+/// OPACITY
+$label-opacity: 0.5;
+
+/// COLORS
+$color-black: #000000;
+$color-black-medium: rgba(33, 33, 33, $alpha-0-7);
+$color-black-soft: #212121;
+$color-black-004: #4d4d4d;
+$color-black-005: #282828;
+$color-black-006: rgba(0, 0, 0, $alpha-0-7);
+$color-black-007: rgba(0, 0, 0, $alpha-0-16);
+$color-black-008: rgba(0, 0, 0, $alpha-0-15);
+// Blue
+$color-blue: #0095ff;
+$color-blue-001: #4464e8;
+$color-blue-002: #4966e0;
+$color-blue-003: #e7f2fe;
+$color-blue-chip: rgba($color-blue, $alpha-0-15);
+$color-blue-dark: #535d73;
+$color-blue-light: #f4f7fc;
+$color-blue-light-001: #f0f8ff;
+$color-blue-navy: #0a1437;
+$color-blue-navy-001: #0c2450;
+$color-blue-navy-002: #0a1837;
+$color-blue-navy-003: #0a1537;
+$color-blue-navy-004: #071539;
+
+//DayPicker
+$color-daypicker-gray-001: #bab7b9;
+$color-daypicker-gray-002: #918c8c;
+$color-daypicker-gray-003: #b1b1b1;
+
+// Gray
+$color-gray: #616161;
+$color-gray-chip: rgba($color-gray, $alpha-0-15);
+$color-gray-light-chip: rgba(238, 238, 238, $alpha-0-15);
+$color-gray-light-medium: #e0e0e0;
+$color-gray-003: #eeeeee;
+$color-gray-004: #f5f5f5;
+$color-gray-005: #979797;
+$color-gray-006: #252525;
+$color-gray-007: #aeafb1;
+$color-gray-008: #f2f2f2;
+$color-gray-009: #787878;
+$color-gray-010: #f2f2f26b;
+$color-gray-011: #4c4c4c;
+$color-gray-012:#3c4043;
+
+// Green
+$color-green: #00d68f;
+$color-green-001: rgba(0, 133, 8, $alpha-0-1);
+$color-green-002:#e5f2e6;
+$color-green-chip: rgba($color-green, $alpha-0-15);
+// Orange
+$color-orange-001: rgba(227, 116, 0, $alpha-0-1);
+// Pink
+$color-pink: #e3008b;
+$color-pink-chip: rgba($color-pink, $alpha-0-15);
+// Red
+$color-red: #f95b45;
+$color-red-chip: rgba($color-red, $alpha-0-15);
+$color-red-001: #ff8c5f;
+$color-red-002: #f44336;
+$color-red-003: #f9e1e1;
+$color-red-003: rgba(163, 28, 28, $alpha-0-1);
+// Silver
+$color-silver: #7b7b7b;
+$color-silver-medium: rgba(33, 33, 33, $alpha-0-3);
+// Teal Blue
+$color-teal-blue-light: #d1eff2;
+$color-teal-blue: #00a1af;
+$color-teal-blue-submenus: rgba(0, 161, 175, 0.1);
+$color-teal-blue-chip: rgba($color-teal-blue, $alpha-0-15);
+$color-teal-blue-share-buttons: #5672df;
+// White
+$color-white: #fff;
+$color-white-light-blueish: #c7cdd5;
+$color-white-light-gray: #d8d8d8;
+// Yellow
+$color-yellow: #ffaa00;
+$color-yellow-chip: rgba($color-yellow, $alpha-0-15);
+// Grayscale
+$color-gray-bluish-soft: #f4f7fc;
+$color-gray-light: #eaeaea;
+$color-gray-light-001: #f9f9f9;
+$color-gray-light-table-row: rgba(234, 234, 234, 0.3);
+$color-gray-medium: #bdbdbd;
+$color-gray-medium-001: #919191;
+$color-gray-medium-002: #c5c5c5;
+$color-gray-medium-003: #636363;
+$color-gray-medium-menu-items: #909090;
+$color-gray-medium-light: #918c8c;
+$color-gray-navigation-submenu-border: rgba(117, 117, 117, $alpha-08);
+
+/// Components
+// Alerts Colors for Background
+$backgroundColorsForAlerts: ('error': (lighten($color-red, 30),
+  ),
+  'success': (lighten($color-green, 30),
+  ),
+  'warning': (lighten($color-yellow, 30),
+  ),
+) !default;
+/// Chip Backgrund Colors
+$bgColorsForChips: ('blue': ($color-blue-chip,
+  ),
+  'disabled': ($color-gray-light-chip,
+  ),
+  'gray': ($color-gray-chip,
+  ),
+  'green': ($color-green-chip,
+  ),
+  'pink': ($color-pink-chip,
+  ),
+  'red': ($color-red-chip,
+  ),
+  'teal-blue': ($color-teal-blue-chip,
+  ),
+  'yellow': ($color-yellow-chip,
+  ),
+) !default;
+// Alerts Colors for Fonts
+$fontColorsForAlerts: ('error': ($color-red,
+  ),
+  'success': ($color-green,
+  ),
+  'warning': ($color-yellow,
+  ),
+) !default;
+/// Chip Font Colors
+$fontColorsForChips: ('blue': ($color-blue,
+  ),
+  'disabled': ($color-gray-light,
+  ),
+  'gray': ($color-gray,
+  ),
+  'green': ($color-green,
+  ),
+  'pink': ($color-pink,
+  ),
+  'red': ($color-red,
+  ),
+  'teal-blue': ($color-teal-blue,
+  ),
+  'yellow': ($color-yellow,
+  ),
+) !default;
+// Tooltip Colors
+$tooltipColors: ('black': ($color-black-005,
+  ),
+  'blue': ($color-blue,
+  ),
+  'green': ($color-green,
+  ),
+  'red': ($color-red,
+  ),
+  'yellow': ($color-yellow,
+  ),
+) !default;
+
+/// MISC
+// Transitions
+$transition-all-default: all 0.2s;
+$transition-all-medium: all 0.25s ease-in-out;
+
+/// Z INDEX
+$z-index-max: 9999;
+
+/// UNITS
+$base-unit: 1rem;
+$baseline: 1.5;
+$cols: 12;
+$gutter: $base-unit * 2;
+$space-around-modal: $base-unit * 3;
+$space-around: $base-unit - 0.12;

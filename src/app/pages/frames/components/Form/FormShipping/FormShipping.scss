@@ -1,0 +1,89 @@
+@import 'src/app/styles/mixins';
+@import 'src/app/styles/variables';
+
+.ShippingForm {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+
+  &__container {
+    margin-bottom: 20px;
+  }
+
+  .ShippingForm__title {
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    text-align: left;
+    color: #5f6368;
+    margin-bottom: 13px;
+    margin-top: 27px;
+    align-items: center;
+    display: flex;
+
+    &-icon {
+      margin-inline: 10px;
+    }
+  }
+
+  .ShippingForm__form {
+    width: 100%;
+
+    .fields__phone-and-postalCode {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .field-evaluated{
+        width: 49%;
+      }
+
+      @include respond-to('sm') {
+        .input-group {
+          flex: 1;
+
+          &:not(:last-of-type) {
+            margin-right: 28px;
+          }
+        }
+      }
+    }
+
+    .ShippingFormAgreement {
+      &__btn-submit {
+        cursor: pointer;
+      }
+
+      &__check {
+        align-items: center;
+        display: flex;
+        margin-bottom: 26px;
+
+        p {
+          color: $color-gray-medium;
+          cursor: pointer;
+          font-size: 14px;
+          line-height: normal;
+          margin-left: 10px;
+          text-align: justify;
+
+          a {
+            text-decoration: none;
+          }
+
+          span {
+            color: $color-teal-blue;
+            font-weight: bold;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+}

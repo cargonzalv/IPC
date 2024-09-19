@@ -1,0 +1,134 @@
+@import 'src/app/styles/mixins';
+@import 'src/app/styles/variables';
+
+.payment-status {
+  padding: 30px 25px;
+
+  @include respond-to('sm') {
+    padding: 50px 40px;
+  }
+
+  &__amount {
+    font-size: 14px;
+    line-height: 1.5;
+    white-space: pre-line;
+    color: $color-gray-012;
+    margin-top: 13px;
+    margin-bottom: 30px;
+
+    @include respond-to('sm') {
+      font-size: 16px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+
+    &-column-one {
+      width: 50%;
+    }
+
+    &-column-two {
+      width: 45%;
+    }
+  }
+
+  &__payment-method {
+    display: flex;
+
+    &-card {
+      display: flex;
+
+      &-points {
+        margin-inline: 4px;
+        font-weight: 700;
+        font-size: 20px;
+
+        @include respond-to('sm') {
+          font-size: 25px;
+        }
+      }
+
+      &-text {
+        color: rgba($color-black, 0.7);
+        font-size: 12px;
+        margin-top: 10px;
+
+        @include respond-to('sm') {
+          font-size: 16px;
+        }
+      }
+
+      &-last4 {
+        color: $color-black;
+        font-weight: bold;
+        margin-top: 12px;
+        padding-right: 10px;
+        font-size: 14px;
+      }
+
+      .visa {
+        margin-top: 7px;
+      }
+    }
+
+    &-bank-transfer {
+      width: 28px;
+      padding-left: 3px;
+      padding-top: 7px;
+
+      @include respond-to('sm') {
+        width: 45px;
+        padding-left: 5px;
+        padding-top: 0;
+      }
+    }
+  }
+
+
+  &__reference {
+    display: flex;
+
+    &-text {
+      background-color: $color-gray-008;
+      border-radius: 4px;
+      font-size: 20px;
+      font-weight: bold;
+      letter-spacing: 1.05px;
+      margin-top: 10px;
+      padding: 21px 25px;
+      color: $color-gray-medium-003;
+    }
+  }
+
+  &__contact-info {
+    border-top: 2px solid #f5f5f5;
+    margin-block: 20px;
+    font-size: 12px;
+    color: $color-black;
+    line-height: 1.4;
+
+    @include respond-to('sm') {
+      margin-block: 40px;
+      font-size: 14px;
+    }
+
+    &-address {
+      margin-top: 20px;
+
+      @include respond-to('sm') {
+        margin-top: 40px;
+      }
+    }
+
+    &-email {
+      margin-top: 20px;
+
+      @include respond-to('sm') {
+        margin-top: 40px;
+      }
+    }
+  }
+}

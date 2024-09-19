@@ -1,0 +1,78 @@
+@import 'src/app/styles/variables';
+//@import '~@conekta/frontino-ui/Button/styles/Button.scss';
+
+.btn {
+  background-color: $color-pink;
+  border: none;
+  font-family: $font-regular;
+  transition: $transition-all-default;
+
+  &:active:not(.disabled) {
+    transform: translateY(1px);
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  .btn-content {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    i.conekta-iconfont {
+      margin-right: 16px;
+    }
+
+    &.right {
+      flex-direction: row-reverse;
+
+      i.conekta-iconfont {
+        margin-left: 16px;
+        margin-right: 0;
+      }
+    }
+  }
+
+  &.primary:not(.disabled) {
+    background-color: $color-blue-navy;
+    border: 1px solid $color-blue-navy;
+    color: $color-white;
+  }
+
+  &.secondary:not(.disabled) {
+    background-color: $color-white;
+    border: 1px solid $color-gray-medium;
+    color: $color-gray-medium;
+  }
+
+  &.disabled {
+    background-color: $color-gray-light !important;
+    border: 1px solid $color-gray-light !important;
+    color: $color-gray-medium !important;
+    cursor: not-allowed;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .btn-content {
+    font-weight: 500;
+  }
+
+  .Spinner {
+    margin-left: 5%;
+    margin-top: 0;
+    width: 15%;
+  }
+}
+
+.btn-small {
+  align-items: center;
+  border-radius: 2px;
+  border: 1px solid $color-black-soft;
+  min-height: 20px;
+  min-width: 20px;
+  padding: 0;
+}

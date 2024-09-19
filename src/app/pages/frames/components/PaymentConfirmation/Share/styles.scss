@@ -1,0 +1,134 @@
+@import 'src/app/styles/variables';
+
+.payment-confirmation-share-container {
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  border-left: 4px solid blue;
+
+  &__label {
+    color: $color-gray-009;
+    font-size: 14px;
+    line-height: normal;
+    padding-left: 10px;
+  }
+
+  &__icons {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: $color-teal-blue-share-buttons;
+
+    span,
+    img {
+      margin-left: 15px;
+      margin-right: 8px;
+    }
+  }
+
+  &__modal-wrapper {
+    backdrop-filter: blur(5px);
+    background-attachment: fixed;
+    background-color: rgba(117, 117, 117, 0.4);
+    bottom: 0;
+    display: block;
+    left: 0;
+    overflow-x: auto;
+    overflow-y: visible;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transition: all 0.3s;
+    user-select: none;
+    z-index: 9999;
+
+    &__modal {
+      background-color: $color-white;
+      border-radius: 8px;
+      box-shadow: 0px 10px 16px 4px rgb(0 0 0 / 17%);
+      left: 50%;
+      max-height: calc(100vh - 56px);
+      min-height: 200px;
+      min-width: 200px;
+      overflow: auto;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 90%;
+
+      .modal-body {
+        background-color: $color-white;
+        height: 100%;
+        position: relative;
+        padding: 2em;
+
+        h1 {
+          color: $color-blue-navy;
+          font-size: 20px;
+          font-weight: bold;
+          line-height: normal;
+          margin-bottom: 30px;
+        }
+
+        p {
+          font-size: 16px;
+          line-height: 24px;
+          text-align: left;
+          margin-bottom: 30px;
+        }
+
+        label {
+          font-weight: 500;
+          line-height: 1.14;
+        }
+
+        input {
+          outline: none;
+          padding: 12px 16px;
+          width: 100%;
+          margin-top: 8px;
+          border: solid 1px rgba(0, 0, 0, 0.2);
+          border-radius: 4px;
+        }
+
+        .error {
+          color: $color-red-002;
+          font-size: 12px;
+          line-height: 1.2;
+          margin-top: 8px;
+          min-height: 1.2em;
+        }
+
+        .buttons-container {
+          align-items: center;
+          display: flex;
+          justify-content: center;
+
+          .button {
+            font-weight: bold;
+            margin-top: 20px;
+            min-width: 40%;
+          }
+        }
+      }
+
+      .close {
+        color: $color-gray-medium;
+        font-size: 24px;
+        padding: 8px 12px;
+        position: absolute;
+        right: 0;
+        text-align: center;
+        text-decoration: none;
+        top: 0;
+        z-index: 1;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.whatsapp_icon {
+  width: 25px;
+  filter: invert(79%) sepia(8%) saturate(2659%) hue-rotate(63deg) brightness(97%) contrast(78%);
+}

@@ -1,0 +1,78 @@
+@import './cssReset';
+@import './variables';
+@import './mixins';
+@import './fonts';
+@import './icons';
+@import "@conekta/frontino-ui/common/styles/colors";
+@import "@conekta/frontino-ui/Icon/styles/Icon.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-overflow-scrolling: touch;
+  font-family: $font-regular;
+}
+
+a {
+  color: $color-pink;
+  font-weight: bold;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+input {
+  font-family: $font-regular;
+}
+
+h2.view-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 32px;
+}
+
+fieldset {
+  border: 0;
+  margin-bottom: 16px;
+  padding: 0;
+
+  @include respond-to('sm') {
+    &:last-child {
+      margin-bottom: 16px;
+    }
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  legend {
+    margin-bottom: 7px;
+    padding: 0;
+    width: 100%;
+
+    &.secondary {
+      opacity: $label-opacity;
+    }
+  }
+
+  > :not(legend) {
+    margin-left: 27px;
+  }
+
+  &.no-left-margin > * {
+    margin-left: 0;
+  }
+}
+
+.unselectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

@@ -1,0 +1,17 @@
+.breadcrumbs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    &-item {
+        margin-right: 2px;
+
+        &.isActive {
+            font-weight: bold;
+        }
+    }
+
+    &-separator {
+        margin-right: 2px;
+    }
+}

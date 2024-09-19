@@ -1,0 +1,22 @@
+@import 'src/app/styles/mixins';
+@import 'src/app/styles/variables';
+
+.payment-status__price {
+  color: $color-blue-navy-003;
+  font-size: 33px;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.nelo {
+  width: 28px;
+  padding-top: 6px;
+  padding-left: 3px;
+
+  @include respond-to('sm') {
+    width: 45px;
+    padding-left: 5px;
+    padding-top: 0;
+    padding-bottom: 6px;
+  }
+}

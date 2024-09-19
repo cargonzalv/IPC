@@ -1,0 +1,158 @@
+@import 'src/app/styles/mixins';
+@import 'src/app/styles/variables';
+
+.Tooltip {
+  &.tippy-box {
+    @include tooltip-background-color('black');
+    color: $color-white;
+    font-size: 12px;
+
+    &[data-placement='top'],
+    &[data-placement='top-start'] {
+      @include tooltip-arrow('black', 'top', 'bottom');
+    }
+
+    &[data-placement='bottom'],
+    &[data-placement='bottom-start'] {
+      @include tooltip-arrow('black', 'bottom', 'top');
+    }
+
+    &[data-placement='left'],
+    &[data-placement='left-start'] {
+      @include tooltip-arrow('black', 'left', 'right');
+    }
+
+    &[data-placement='right'],
+    &[data-placement='right-start'] {
+      @include tooltip-arrow('black', 'right', 'left');
+    }
+  }
+
+  &.danger {
+    @include tooltip-background-color('red');
+    color: $color-black;
+
+    &[data-placement='top'],
+    &[data-placement='top-start'] {
+      @include tooltip-arrow('red', 'top', 'bottom');
+    }
+
+    &[data-placement='bottom'],
+    &[data-placement='bottom-start'] {
+      @include tooltip-arrow('red', 'bottom', 'top');
+    }
+
+    &[data-placement='left'],
+    &[data-placement='left-start'] {
+      @include tooltip-arrow('red', 'left', 'right');
+    }
+
+    &[data-placement='right'],
+    &[data-placement='right-start'] {
+      @include tooltip-arrow('red', 'right', 'left');
+    }
+  }
+
+  &.info {
+    @include tooltip-background-color('blue');
+    color: $color-black;
+
+    &[data-placement='top'],
+    &[data-placement='top-start'] {
+      @include tooltip-arrow('blue', 'top', 'bottom');
+    }
+
+    &[data-placement='bottom'],
+    &[data-placement='bottom-start'] {
+      @include tooltip-arrow('blue', 'bottom', 'top');
+    }
+
+    &[data-placement='left'],
+    &[data-placement='left-start'] {
+      @include tooltip-arrow('blue', 'left', 'right');
+    }
+
+    &[data-placement='right'],
+    &[data-placement='right-start'] {
+      @include tooltip-arrow('blue', 'right', 'left');
+    }
+  }
+
+  &.success {
+    @include tooltip-background-color('green');
+    color: $color-black;
+
+    &[data-placement='top'],
+    &[data-placement='top-start'] {
+      @include tooltip-arrow('green', 'top', 'bottom');
+    }
+
+    &[data-placement='bottom'],
+    &[data-placement='bottom-start'] {
+      @include tooltip-arrow('green', 'bottom', 'top');
+    }
+
+    &[data-placement='left'],
+    &[data-placement='left-start'] {
+      @include tooltip-arrow('green', 'left', 'right');
+    }
+
+    &[data-placement='right'],
+    &[data-placement='right-start'] {
+      @include tooltip-arrow('green', 'right', 'left');
+    }
+  }
+
+  &.warning {
+    @include tooltip-background-color('yellow');
+    color: $color-black;
+
+    &[data-placement='top'],
+    &[data-placement='top-start'] {
+      @include tooltip-arrow('yellow', 'top', 'bottom');
+    }
+
+    &[data-placement='bottom'],
+    &[data-placement='bottom-start'] {
+      @include tooltip-arrow('yellow', 'bottom', 'top');
+    }
+
+    &[data-placement='left'],
+    &[data-placement='left-start'] {
+      @include tooltip-arrow('yellow', 'left', 'right');
+    }
+
+    &[data-placement='right'],
+    &[data-placement='right-start'] {
+      @include tooltip-arrow('yellow', 'right', 'left');
+    }
+  }
+}
+
+.TooltipWrapper {
+  display: inline-block;
+  margin: 1px;
+
+  .Tooltip__dot {
+    @include tooltip-background-color('black');
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+
+    &.danger {
+      @include tooltip-background-color('red');
+    }
+
+    &.info {
+      @include tooltip-background-color('blue');
+    }
+
+    &.success {
+      @include tooltip-background-color('green');
+    }
+
+    &.warning {
+      @include tooltip-background-color('yellow');
+    }
+  }
+}

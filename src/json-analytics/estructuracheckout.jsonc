@@ -1,0 +1,56 @@
+{
+  // "isIntegration": false,
+  "checkoutRequest": {
+    "id": "d97e1b99-2613-4f14-a94a-74d9a584def9",
+    // "entityId": "64d6f8c7-edc8-4b28-a589-fd60aca2c3e8",
+    "companyId": "6491c04f1cd4de00015184a4",
+    // "amount": 200000, formattedAmount es el correcto con los decimales aplicados
+    "liveMode": true,
+    "status": "Issued",
+    "type": "PaymentLink", // HostedPayment, Integration
+    "recurrent": true,
+    "expiredAt": 1718479080,
+    "startsAt": 1715887080,
+    "needsShippingContact": true,
+    "orderTemplate": {
+      "lineItems": [
+        {
+          "name": "Videojuegos",
+          "unitPrice": 200000,
+          "quantity": 1
+        }
+      ],
+      "customerInfo": {
+        "customerId": "cus_2uzv9WhMMSyffMB1g",
+        "name": "Pedro Ruiz", // string o null
+        "email": "alexis.ruiz@conekta.com"
+        // "phone": null // string o null
+      }, // customerInfo puede ser null cuando es pago multiple
+      "currency": "MXN",
+      // "metadata": null,
+      "shippingLines": [], // ordernarlo alfabeticamente y enviar como un string separado por comas
+      "taxLines": [], // ordernarlo alfabeticamente y enviar como un string separado por comas
+      "discountLines": [], // ordernarlo alfabeticamente y enviar como un string separado por comas
+      "shippingContact": null
+      // "subtotal": 200000
+    },
+    "monthlyInstallmentsEnabled": true,
+    // "monthlyInstallmentsOptions": [3, 6, 9, 12],
+    "force3dsFlow": false,
+    // "excludeCardNetworks": [], // ordernarlo alfabeticamente y enviar como un string separado por comas
+    "canNotExpire": true,
+    // "openAmount": false,
+    "femsaMigrated": false
+  },
+  "entity": {
+    // "id": "64d6f8c7-edc8-4b28-a589-fd60aca2c3e8",
+    "name": "Pruebas Ale",
+    // "idReferenceCompany": "6491c04f1cd4de00015184a4",
+    "threeDs": "EnabledDynamic"
+  },
+  "formattedAmount": 2000,
+  "amountInCurrencyFormat": "$2,000.00",
+  "allowedPaymentMethods": ["Card", "Cash", "BankTransfer"], // ordernarlo alfabeticamente y enviar como un string separado por comas
+  "isDatalogic": false,
+  "isPespay": false,
+}

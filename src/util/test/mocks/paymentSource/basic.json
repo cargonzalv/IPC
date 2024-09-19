@@ -1,0 +1,11 @@
+{
+  "customerInfo": {
+    "customerId": "cus_2uoEFeZQ8AkwTFYyi",
+    "name": "Pedro Customer",
+    "email": "alexis.ruiz@conekta.com",
+    "phone": "+5215555555555",
+    "corporate": false,
+    "customerFingerprint": null
+  },
+  "paymentKey": "00000000-0000-0000-0000-000000000000"
+}

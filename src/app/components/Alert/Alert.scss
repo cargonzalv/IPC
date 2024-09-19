@@ -1,0 +1,27 @@
+@import 'src/app/styles/mixins';
+@import 'src/app/styles/variables';
+
+.Alert {
+  align-items: center;
+  display: flex;
+  padding: 16px;
+  font-size: 15px;
+  line-height: 1;
+  color: rgba($color-black, $alpha-0-75);
+
+  &.error {
+    background-color: $color-red-003;
+  }
+
+  &.success {
+    background-color: $color-green-001;
+  }
+
+  &.warning {
+    background-color: $color-orange-001;
+  }
+
+  img {
+    margin-right: 6px;
+  }
+}

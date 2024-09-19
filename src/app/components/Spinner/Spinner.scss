@@ -1,0 +1,26 @@
+@import 'src/app/styles/mixins';
+@import 'src/app/styles/variables';
+
+.Spinner {
+  margin-top: 5%;
+  text-align: center;
+  width: 100%;
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
+
+  .Spinner__svg {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+    text-align: center;
+  }
+
+  // Set the color of the icon
+  svg path,
+  svg rect {
+    fill: $color-teal-blue;
+  }
+}

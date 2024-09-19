@@ -1,0 +1,94 @@
+@import './variables';
+
+@mixin table-cell-grand-total {
+  font-size: 20px;
+  font-weight: 600;
+  padding-top: 20px;
+}
+
+/// ALERTS
+/// Mixin to get the colors for a Alert Component
+@mixin css-for-an-alert($type) {
+  background-color: inspect(map-get($backgroundColorsForAlerts, $type));
+  color: inspect(map-get($fontColorsForAlerts, $type));
+}
+
+/// Mixin to manage responsive breakpoints
+/// @author Hugo Giraudel
+/// @param {String} $breakpoint - Breakpoint name
+/// @require $breakpoints
+@mixin respond-to($breakpoint) {
+  // If the key exists in the map
+  @if map-has-key($breakpoints, $breakpoint) {
+    // Prints a media query based on the value
+    @media #{inspect(map-get($breakpoints, $breakpoint))} {
+      @content;
+    }
+  }
+  // If the key doesn't exist in the map
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Available breakpoints are: #{map-keys($breakpoints)}.";
+  }
+}
+/// Modified version to allow set exact pixel breckpoints
+@mixin respond-exact-to($breakpoint) {
+  @media (min-width: #{$breakpoint}) {
+    @content;
+  }
+}
+
+/// CHIPS
+/// Mixin to get the bg color for a Chip
+@mixin bg-color-for-chip($color) {
+  background-color: inspect(map-get($bgColorsForChips, $color));
+  color: inspect(map-get($fontColorsForChips, $color));
+}
+
+/// Mixin to get the bg's for a Chip (includes the icon's backgrounds)
+@mixin backgrounds-for-a-chip($color) {
+  @include bg-color-for-chip($color);
+
+  .Chip__icon.icon-background-filled {
+    @include bg-color-for-chip($color);
+  }
+}
+
+/// MISC
+/// BORDERS
+@mixin border-1-solid($color) {
+  border: 1px solid $color;
+}
+
+/// IMAGE
+/// CONTAINERS
+/// Center image in PencilCase Container
+@mixin image-container-pencil-case {
+  border-radius: 50%;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16);
+  height: 32px;
+  min-width: 32px;
+  overflow: hidden;
+  position: relative;
+  text-align: left;
+  width: 32px;
+
+  img {
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}
+
+@mixin tooltip-arrow($border-color, $border-position, $arrow-position) {
+  > .tippy-arrow::before {
+    border-#{$border-position}-color: inspect(map-get($tooltipColors, $border-color));
+    #{$arrow-position}: #{$tooltip-arrow-distance-from-content};
+  }
+}
+
+@mixin tooltip-background-color($color) {
+  background-color: inspect(map-get($tooltipColors, $color));
+}

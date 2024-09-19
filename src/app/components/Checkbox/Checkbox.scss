@@ -1,0 +1,93 @@
+@import 'src/app/styles/variables';
+
+.Checkbox {
+  cursor: pointer;
+  display: inline-block;
+  height: 16px;
+  outline: none;
+  position: relative;
+  top: 1px;
+  width: 16px;
+
+  &:hover:not(.disabled) {
+    .square {
+      stroke: $color-teal-blue;
+      transition: $transition-all-default;
+    }
+  }
+
+  &.checked:not(.disabled) {
+    .tick {
+      stroke-dashoffset: 0;
+      stroke: $color-white;
+    }
+    .square {
+      fill-opacity: 1;
+      fill: $color-teal-blue;
+      stroke: $color-teal-blue;
+    }
+  }
+
+  &.disabled {
+    cursor: initial;
+
+    .square {
+      fill-opacity: 1;
+      fill: $color-gray-medium;
+      opacity: 0.2;
+      stroke: $color-gray;
+    }
+  }
+
+  &.unchecked:not(.disabled) {
+    .tick {
+      stroke-dashoffset: 24;
+      stroke-width: 0;
+    }
+    .square {
+      fill-opacity: 0;
+      fill: $color-white;
+    }
+  }
+
+  .square {
+    fill-opacity: 0;
+    fill: $color-white;
+    height: 13px;
+    stroke-width: 2px;
+    stroke: $color-gray-medium;
+    transition: fill-opacity 0.1s ease-in-out;
+  }
+
+  .tick {
+    fill: none;
+    stroke-dasharray: 24;
+    stroke-dashoffset: 24;
+    stroke-width: 2;
+    stroke: $color-teal-blue;
+    transform-origin: center;
+    transform: rotate(-45deg);
+    transition-property: stroke-dashoffset;
+    transition-timing-function: cubic-bezier(1, 0, 0.55, 0.41);
+    transition: stroke-dashoffset 0.5s cubic-bezier(1, 0, 0.55, 0.41);
+  }
+
+  svg {
+    height: 16px;
+    width: 16px;
+  }
+
+  input {
+    box-sizing: border-box;
+    cursor: inherit;
+    height: 100%;
+    left: 0;
+    margin: 0;
+    opacity: 0;
+    padding: 0;
+    pointer-events: all;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}

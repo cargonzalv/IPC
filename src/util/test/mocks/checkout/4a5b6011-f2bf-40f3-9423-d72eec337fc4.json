@@ -1,0 +1,100 @@
+{
+  "id": "4a5b6011-f2bf-40f3-9423-d72eec337fc4",
+  "entityId": "f761dc6f-ba3d-4177-9788-cb7caf103463",
+  "companyId": "619e9bbefb554d00016fc40b",
+  "name": "ord-2vtEkoF1LQV3vDcMv",
+  "amount": 23000,
+  "quantity": 1,
+  "liveMode": true,
+  "status": "Issued",
+  "type": "Integration",
+  "recurrent": false,
+  "expiredAt": 1715234399,
+  "startsAt": 1714975200,
+  "allowedPaymentMethods": ["Card", "BankTransfer", "Cash"],
+  "slug": "4a5b6011f2bf40f39423d72eec337fc4",
+  "url": "https://pay.stg.conekta.io/link/4a5b6011f2bf40f39423d72eec337fc4",
+  "returnsControlOn": "ProcessOrder",
+  "needsShippingContact": false,
+  "orderTemplate": {
+    "lineItems": [
+      {
+        "name": "Nombre del Producto o Servicio",
+        "unitPrice": 23000,
+        "quantity": 1,
+        "description": "",
+        "object": "line_item",
+        "id": "line_item_2vtEkoF1LQV3vDcMt",
+        "parentId": "ord_2vtEkoF1LQV3vDcMv"
+      }
+    ],
+    "customerInfo": {
+      "customerId": "",
+      "name": "Jorge Martínez",
+      "email": "jorge.martinez@conekta.com",
+      "phone": "+5218181818181",
+      "corporate": false,
+      "customerFingerprint": null
+    },
+    "currency": "MXN",
+    "metadata": [
+      {
+        "key": "datos_extra",
+        "value": "1234"
+      }
+    ],
+    "shippingLines": [],
+    "taxLines": [],
+    "discountLines": [],
+    "shippingContact": null
+  },
+  "orders": [
+    {
+      "id": "",
+      "shippingContactId": "",
+      "apiChargeId": "",
+      "apiOrderId": "ord_2vtEkoF1LQV3vDcMv",
+      "paymentMethod": "",
+      "reference": "",
+      "shippingContact": null,
+      "charges": [],
+      "customerInfo": {
+        "customerId": "",
+        "name": "Jorge Martínez",
+        "email": "jorge.martinez@conekta.com",
+        "phone": "+5218181818181",
+        "corporate": false,
+        "customerFingerprint": null
+      }
+    }
+  ],
+  "token": null,
+  "paymentSource": null,
+  "monthlyInstallmentsEnabled": false,
+  "monthlyInstallmentsOptions": [],
+  "paymentsLimitCount": 0,
+  "paymentKeys": [],
+  "onDemandEnabled": false,
+  "force3dsFlow": false,
+  "planId": "",
+  "excludeCardNetworks": [],
+  "redirectionTime": 0,
+  "canNotExpire": false,
+  "providers": [
+    {
+      "id": "629e08359e9c3172635b8f07",
+      "name": "datalogic",
+      "paymentMethod": "cash"
+    }
+  ],
+  "openAmount": false,
+  "plan": null,
+  "configuration": {
+    "id": "c7f98f14-5551-413f-9ba7-f222d23e1466",
+    "entityId": "f761dc6f-ba3d-4177-9788-cb7caf103463",
+    "liveMode": true,
+    "customStyle": "{\"theme\": \"default\", \"button\": {}, \"styles\": {\"logo\": {\"size\": \"large\", \"source\": \"https://assets.stg.conekta.io/merchant-configuration/logos/f761dc6f-ba3d-4177-9788-cb7caf103463.jpg\", \"typeImage\": \"url\"}, \"colors\": {\"primary\": \"#4966e0\"}, \"fontSize\": \"compact\", \"buttonType\": \"rounded\"}, \"sidebar\": {\"color\": \"#FFFFFF\", \"backgroundColor\": \"#071837\"}, \"paymentMethodInformation\": {}}",
+    "createCustomers": false
+  },
+  "femsaMigrated": false
+}

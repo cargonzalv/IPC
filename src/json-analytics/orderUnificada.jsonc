@@ -1,0 +1,40 @@
+{
+  "order": {
+    "id": "ord_2vwq5dErmMbDLBqJ1",
+    "reference": "93000000103232", // string o null solo para cash o bank transfer
+    // para cash es el charge.paymentMethod.reference, para SPEI es charge.paymentMethod.clabe
+    "charge": {
+      "id": "6647692a052aa40001db3c5e",
+      "liveMode": false,
+      "currency": "MXN",
+      "paymentMethod": {
+        "type": "cash", // bankTransfer, cash, card
+        "expiresAt": 1716387480, // 1723657243, null, null
+        // datos de cash
+        "serviceName": "OxxoPay", // "OxxoPay", "Cash", null
+        // "reference": null, // string o null es la misma reference de la order
+        // datos de bank transfer
+        // "clabe": null, // string o null es la misma reference de la order
+        "bank": null, // string o null
+        // datos de tarjeta
+        "card_type": null, // string o null
+        "brand": null, // string o null
+        "issuer": null, // string o null
+        "accountType": null, // string o null
+        "country": null // string o null
+      },
+      "status": "pending_payment" // pending_payment, paid
+    }
+    // "metaData": {}
+  },
+  "paymentSource": {
+    "customerInfo": {
+      // cuando llegue esta data de customer info debo setearla al checkout y siempre sacarla de ahí, evitar data duplicada.
+      "customerId": "cus_2uzv9WhMMSyffMB1g",
+      "name": "Pedro Ruiz", // string o null
+      "email": "alexis.ruiz@conekta.com"
+    }
+  }
+}
+
+// tiene maximo 15 event params (card, los otros metodos de pago tienen menos)

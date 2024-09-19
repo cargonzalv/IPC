@@ -1,0 +1,10 @@
+@import 'src/app/styles/mixins';
+@import 'src/app/styles/variables';
+
+.FormCustomer {
+  &__information {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 24px;
+  }
+}

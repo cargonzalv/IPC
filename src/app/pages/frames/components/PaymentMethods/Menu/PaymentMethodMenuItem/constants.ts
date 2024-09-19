@@ -1,0 +1,1 @@
+export const OXXO = 'oxxo';
